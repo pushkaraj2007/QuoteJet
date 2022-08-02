@@ -93,7 +93,7 @@ header{
 
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 750px){
     .external-linksDiv ul{
         flex-direction: column;
         align-items: center;
@@ -102,5 +102,23 @@ header{
     .external-linksDiv ul li:nth-child(2){
         margin-top: 10px;
         margin-left: 0px;
+    }
+
+    .quote-div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quote{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .quote-author{
+        padding-left: 10px;
+    }
+
+    .generate-quote-btn{
+        align-self: center;
     }
 }

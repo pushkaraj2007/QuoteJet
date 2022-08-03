@@ -93,6 +93,20 @@ header{
 
 }
 
+.btn-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 550px;
+    align-self: center;
+}
+
+.btn-div img{
+    height: 50px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 750px){
     .external-linksDiv ul{
         flex-direction: column;
@@ -120,5 +134,11 @@ header{
 
     .generate-quote-btn{
         align-self: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .btn-div{
+        width: 300px;
     }
 }

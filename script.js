@@ -2,6 +2,8 @@ const generateQuoteBtn = document.querySelector('.generate-quote-btn');
 const quote = document.querySelector('.quote');
 const quoteAuthor = document.querySelector('.quote-author');
 const shareOnTwitter = document.querySelector('.share-on-twitter');
+const moreOptionsImg = document.querySelector('.more-optionsImg')
+const moreOptionsDiv = document.querySelector('.more-optionsDiv')
 
 const generateQuote = async ()=>{
     let res = await fetch('https://api.quotable.io/random');
@@ -18,6 +20,10 @@ generateQuoteBtn.onclick = async ()=>{
     } catch (error) {
         console.log(error)
     }
+}
+
+moreOptionsImg.onclick= ()=>{
+    moreOptionsDiv.classList.toggle('hide')
 }
 
 shareOnTwitter.onclick = ()=>{

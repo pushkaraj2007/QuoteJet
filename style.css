@@ -57,8 +57,9 @@ header{
 
 .quote-div{
     /* background-color: aqua; */
-    height: 170px;
     width: 550px;
+    display: flex;
+    flex-direction: column;
 }
 
 .quote{
@@ -102,9 +103,40 @@ header{
 }
 
 .btn-div img{
-    height: 50px;
+    height: 40px;
     margin-top: 13px;
     cursor: pointer;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.btn-div img:hover{
+    background: #f5f6f6;
+}
+
+.more-optionsDiv{
+    height: 200px;
+    width: 250px;
+    -webkit-box-shadow: 10px 10px 13px -4px rgba(0,0,0,0.49);
+    -moz-box-shadow: 10px 10px 13px -4px rgba(0,0,0,0.49);
+    box-shadow: 10px 10px 13px -4px rgba(0,0,0,0.49);
+    align-self: flex-end;
+}
+
+.hide{
+    display: none;
+}
+
+.share-on-twitter{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.share-on-twitter:hover{
+    background-color: #f5f6f6;
 }
 
 @media only screen and (max-width: 750px){

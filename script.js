@@ -35,3 +35,15 @@ shareOnTwitter.onclick = ()=>{
 shareOnWhatsapp.onclick = ()=>{
     location.href = `https://web.whatsapp.com/send?text=${quote.innerText}%0A%0A%0A${quoteAuthor.innerText}`
 }
+
+body.onclick = (e)=>{
+    if(e.target !== document.querySelector('.more-optionsDiv')){
+        console.log(moreOptionsDiv.className.split(' '))
+        if(e.target !== document.querySelector('.more-optionsImg')){
+            moreOptionsDiv.classList.add('hide')
+        }
+    }
+    else{
+        console.log('you are inside div')
+    }
+}

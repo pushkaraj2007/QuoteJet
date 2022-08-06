@@ -6,6 +6,11 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+body{
+    height: 100vh;
+    width: 100%;
+}
+
 header{
     /* background-color: black; */
     height: 60px;
@@ -136,6 +141,18 @@ header{
 }
 
 .share-on-twitter:hover{
+    background-color: #f5f6f6;
+}
+
+.share-on-whatsapp{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.share-on-whatsapp:hover{
     background-color: #f5f6f6;
 }
 

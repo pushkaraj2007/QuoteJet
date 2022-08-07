@@ -3,6 +3,7 @@ const quote = document.querySelector('.quote');
 const quoteAuthor = document.querySelector('.quote-author');
 const shareOnTwitter = document.querySelector('.share-on-twitter');
 const shareOnWhatsapp = document.querySelector('.share-on-whatsapp');
+const copy = document.querySelector('.copy-to-clipboard');
 const moreOptionsImg = document.querySelector('.more-optionsImg')
 const moreOptionsDiv = document.querySelector('.more-optionsDiv')
 const body = document.querySelector('body')
@@ -34,6 +35,16 @@ shareOnTwitter.onclick = ()=>{
 
 shareOnWhatsapp.onclick = ()=>{
     location.href = `https://web.whatsapp.com/send?text=${quote.innerText}%0A%0A%0A${quoteAuthor.innerText}`
+}
+
+copy.onclick = ()=>{
+    let input = document.createElement('input')
+    input.value = quote.innerText
+    body.append(input)
+    input.select()
+    document.execCommand('copy')
+    body.removeChild(input)
+    console.log(input.value)
 }
 
 body.onclick = (e)=>{

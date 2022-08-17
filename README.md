@@ -4,11 +4,9 @@ A web app that let's you generate motivational quotes, and share with among the 
 
 ## Languages/ Tool:
 
-**Client:** HTML, CSS, JavaScript
-
-**Server:** No backend
-
-**Database:** No database
+- HTML
+- CSS
+- JavaScript
 
 ## 👩🏽‍💻 Demo
 

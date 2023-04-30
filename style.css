@@ -13,7 +13,7 @@ body{
 
 header{
     /* background-color: black; */
-    height: 60px;
+    height: 80px;
     color: black;
     display: flex;
     justify-content: center;
@@ -23,6 +23,7 @@ header{
 
 .header-appName{
     font-size: 30px;
+    padding: 5%;
 }
 
 .external-linksDiv{
